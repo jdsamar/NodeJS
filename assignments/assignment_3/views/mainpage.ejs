@@ -10,17 +10,17 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" style="text-align: center;">
         <div class="content">
-            <% data.forEach((user) => {%>
+            <% users.forEach(user => {%>
                 <div class="card">
-                    <h3><% = user.name %></h3>
-                    <p><% = user.email %></p>
+                    <h3><%= user.name %></h3>
+                    <p><%= user.email %></p>
                 </div>
-                <%});%>
+                <%})%>
         </div>
         <div class="button">
-            <button type="button" onclick="location.href = '/form'">Add</button>
+            <a href="/form"><button>Add user</button></a>
         </div>
     </div>
 </body>

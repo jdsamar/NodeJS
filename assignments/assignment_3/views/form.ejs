@@ -10,11 +10,13 @@
 </head>
 
 <body>
-    <div class="form">
-        <form method="POST" action="/user/add">
-            <input type="text" name="name" value="" >
-            <input type="text" name="email" value="">
-            <button type="submit">Submit</button>
+    <div class="form" style="text-align: center;">
+        <form method="POST" action="/add/user">
+            <label for="name">Name : </label>
+            <input type="text" name="name" value="" ><br />
+            <label for="email">Emai : </label>
+            <input type="email" name="email" value=""><br />
+            <input type="submit" value="Submit" />
         </form>
     </div>
 </body>
